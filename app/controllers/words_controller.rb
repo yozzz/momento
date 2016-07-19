@@ -1,10 +1,12 @@
 class WordsController < ApplicationController
+
   before_action :set_word, only: [:show, :edit, :update, :destroy]
 
   # GET /words
   # GET /words.json
   def index
-    @words = Word.all
+    @words = Word.all.select(:id, :name, :translation)
+    @word = Word.new
   end
 
   # GET /words/1

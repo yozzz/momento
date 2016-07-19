@@ -6,12 +6,34 @@ a{
   text-decoration: none;
 }
 
+table{
+  width: 380px;
+}
+
 tr{
   td{
-    font-size: 16px;  
+    font-size: 30px;
+    padding: 10px;
   }
 }
 
 .title{
   text-align: center;
+}
+
+
+form{
+  width: 460px;
+  input{
+    display: inline;
+    margin: 10px;
+    height: 35px;
+    width: 170px;
+    font-size: 26px;
+    border: 2px solid lightblue;
+    border-radius: 4px;
+  }
+  button{
+    margin-bottom: 15px !important;
+  }
 }
